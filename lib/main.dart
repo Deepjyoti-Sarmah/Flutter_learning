@@ -18,33 +18,40 @@ class HomePage extends StatelessWidget {
         appBar: AppBar(
           title: Text("Awsome App"),
         ),
-        body: Center(
-          child: Container(
-            padding: const EdgeInsets.all(8),
-            alignment: Alignment.center,
-            width: 100,
-            height: 100,
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black26,
-                    blurRadius: 5,
-                    offset: Offset(2.0, 5.0),
-                  )
-                ],
-                color: Colors.teal,
-                gradient: LinearGradient(colors: [
-                  Colors.yellow,
-                  Colors.pink,
-                ])),
-            child: Text(
-              "I am a Box",
-              textAlign:TextAlign.center,
-              style: TextStyle(
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
-                fontSize: 20,
+        body: Padding(
+          padding: const EdgeInsets.all(8),
+          child: Align(
+            alignment: Alignment.centerLeft,
+            child: Container(
+              color: Colors.black,
+              width: 300,
+              height: 400,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(8),
+                      width: 100,
+                      height: 100,
+                      color: Colors.red,
+                    ),
+                    Container(
+                      padding: const EdgeInsets.all(8),
+                      width: 100,
+                      height: 100,
+                      color: Colors.yellow,
+                    ),
+                    Container(
+                      padding: const EdgeInsets.all(8),
+                      width: 100,
+                      height: 100,
+                      color: Colors.green,
+                    ),
+                  ],
+                ),
               ),
             ),
           ),
