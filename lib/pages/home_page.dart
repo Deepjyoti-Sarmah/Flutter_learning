@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tutorial/utils/constants.dart';
-import '../drawer/drawer.dart';
+import '../widgets/drawer/drawer.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
